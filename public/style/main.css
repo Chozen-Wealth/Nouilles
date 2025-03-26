@@ -1,0 +1,19 @@
+/* Portfolio */
+.portfolioDiv1 {
+    background-image: url(../images/folio-1.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.portfolioDiv2 {
+    background-image: url(../images/folio-2.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.portfolioDiv3 {
+    background-image: url(../images/folio-3.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
