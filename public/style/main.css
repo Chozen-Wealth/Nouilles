@@ -17,3 +17,7 @@
     height: 100px;
     width: 100px;
 }
+
+.about p {
+    font-family: "Noto Sans JP", sans-serif;
+}
