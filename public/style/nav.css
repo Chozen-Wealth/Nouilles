@@ -1,0 +1,26 @@
+nav {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: -50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#burger {
+    display: none;
+    margin-left: 10px;
+}
+
+#close {
+    margin-left: 10px;
+}
