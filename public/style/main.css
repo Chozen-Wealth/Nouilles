@@ -67,7 +67,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 700px;
 }
 .serviceDiv {
     display: flex;
@@ -77,6 +76,7 @@
     margin-bottom: 70px;
 }
 .service h4 {
+    margin-top: 150px;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -95,10 +95,34 @@
     font-weight: 900;
     font-size: 22px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .service img {
     width: 60px;
     margin-top: 50px;
 }
 /* SERVICE */
+
+
+/* PORTFOLIO */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolioDiv {
+    display: flex;
+    gap: 30px;
+}
+.portfolioDiv > Div {
+    height: 375px;
+    width: 375px;
+}
+.portfolio h2 {
+    margin-bottom: 50px;
+}
+.portfolio h4 {
+    margin-top: 150px;
+}
+/* PORTFOLIO */
