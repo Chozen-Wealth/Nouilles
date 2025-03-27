@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    height: 80px;
+}
+footer hr {
+    width: 78%;
+    opacity: 30%;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 78%;
+    font-family: "Noto Sans JP", sans-serif;
+    color: gray;
+}
+
+.footerDiv div {
+    display: flex;
+    gap: 5px;
+}
+
+.footerDiv div i {
+    font-size: 16px;
+    border: 2.5px solid gray;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

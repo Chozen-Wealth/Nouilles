@@ -432,29 +432,29 @@ form {
 }
 form textarea {
     width: 50%;
-    height: 150px;
+    height: 170px;
     border: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 5px;
+    background-color: #fdfdfd;
 }
 form textarea::placeholder {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 10px;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 18px;
-    background-color: #f9f9f9;
-    
 }
 form button {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 16px;
     color: #695AA6;
-    border: 1px solid #695AA6;
+    border: 2px solid #695AA6;
     background-color: white;
     border-radius: 5px;
-    padding: 6px 12px;
+    padding: 8px 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    font-weight: 500;
 }
 /* CONTACT */
