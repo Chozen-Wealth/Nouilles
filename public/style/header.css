@@ -6,13 +6,15 @@ header {
     background-size: cover;
     background-repeat: no-repeat; */
     /* margin-top: -275px; */
+    display: flex;
+    justify-content: center;
 }
 
 header img {
     position: absolute;
-    top: -290px;
+    top: -270px;
     left: 0px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: top;
     -o-object-position: top;
     width: 100vw;
