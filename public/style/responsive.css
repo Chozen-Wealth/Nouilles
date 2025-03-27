@@ -1,12 +1,30 @@
 @media (min-width:600px) and (max-width:1024px) {
+    .openNav, .closeNav {
+        display: block;
+    }
+    nav:has(#navActive:checked) ul {
+        display: flex;
+        position: absolute;
+        right: 5%;
+    }
+    nav:has(#navActive:checked) #burger{
+        display: none;
+        transition: all 1s ease-out;
+    }
+    #navActive{
+        display: none;
+        transition: all 1s ease-out;
+    }
     nav {
         padding-left: 4%;
         padding-right: 4%;
+        position: relative;
     }
     nav h2 {
         font-size: 22px;
     }
     nav ul {
+        display: none;
         font-size: 16px;
         gap: 10px;
     }
@@ -77,13 +95,30 @@
     nav ul{
         display: none;
         flex-direction: column-reverse;
-        position: fixed;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: rgba(121, 103, 202, 0.212);
+        backdrop-filter: blur(10px);
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        padding-right: 5%;
+        margin-right: 0px;
+        align-items: flex-end;
+        border-radius: 0px 0px 0px 20px;
+        transition: all 1s ease-out;
+        /* position: fixed;
         top: 0;
-        right: 0;
-        background-color: purple;
+        right: 0; */
+    }
+    #closeNav {
+        position: absolute;
+        right: 0px;
+        top: 0px;
     }
     #navActive {
-        display: flex;
+        display: none;
     }
     .openNav, .closeNav {
         display: block;
@@ -226,10 +261,17 @@
     }
 
     nav:has(#navActive:checked) ul{
-        
         display: flex;
+        transition: all 1s ease-out;
+        position: absolute;
+        right: 0px;
+    }
+    nav:has(#navActive:checked) #burger{
+        display: none;
+        transition: all 1s ease-out;
     }
     #navActive{
         display: none;
+        transition: all 1s ease-out;
     }
 }
