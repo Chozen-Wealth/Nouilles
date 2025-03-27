@@ -74,12 +74,11 @@
 }
 
 @media (max-width:600px) {
-    nav {
-        flex-direction: column;
-        justify-content: center;
+    nav ul li {
+        display: none;
     }
-    #buger {
-        display: block;
+    #burger {
+        font-size: 22px;
     }
     #close {
         display: none;
@@ -105,4 +104,24 @@
     header h3 {
         font-size: 20px;
     }
+    .about {
+        flex-direction: column;
+    }
+    .aboutTextDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        text-align: center;
+    }
+    .aboutImgDiv {
+        width: 50%;
+    }
+    .portfolioDiv div{
+        width: 250px;
+        height: 250px;
+
+    }
+    
 }
