@@ -123,5 +123,92 @@
         height: 250px;
 
     }
+    .cta {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .ctaGauche {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ctaDroite {
+        margin-right: 0;
+    }
+    .testimonialGauche {
+        width: 90%;
+        margin-top: 50px;
+    }
+    .testimonialDroite {
+        width: 90%;
+    }
+    .testimonialGauche > div {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonialDroite > div {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .avatarGauche {
+        left: auto;
+        top: -60px;
+    }
+    .avatarDroite {
+        left: auto;
+        top: -60px;
+    }
+    .blogPost1 {
+        width: 80%;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .blogPost1 img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .blogPost2 {
+        width: 80%;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .blogPost2 img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .blogPostText1 {
+        gap: 10px;
+    }
+    .blogPostText2 {
+        gap: 10px;
+    }
+    form {
+        width: 80%;
+    }
+    form textarea {
+        width: 100%;
+    }
+    footer {
+        height: fit-content;
+    }
+    .footerDiv {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .footerDiv i {
+        margin-top: 20px;
+    }
+    .footerDiv p {
+        margin-bottom: 20px;
+    }
     
 }
