@@ -234,3 +234,87 @@
     margin-right: 30%;
 }
 /* CTA */
+
+
+/* TESTIMONIAL */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+}
+.testimonial h2 {
+    margin-bottom: 50px;
+}
+.testimonial h4 {
+    margin-top: 75px;
+}
+
+.testimonialDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-left: 5%;
+}
+
+.testimonialGauche {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    width: 500px;
+    position: relative;
+    justify-content: center;
+}
+.testimonialDroite {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 520px;
+    position: relative;
+    justify-content: center;
+}
+.testimonialGauche div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.testimonialDroite div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.testimonial img {
+    width: 80px;
+    border-radius: 50%;
+    
+}
+.avatarGauche {
+    position: absolute;
+    left: -40px;
+}
+.avatarDroite {
+    position: absolute;
+    left: -40px;
+
+}
+.testimonialDiv div p {
+    font-size: 16px;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #4c4d4f;
+}
+.testimonialDiv div span {
+    font-family: "Baloo 2", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #695AA6;
+}
+/* TESTIMONIAL */
