@@ -74,14 +74,22 @@
 }
 
 @media (max-width:600px) {
-    nav ul li {
+    nav ul{
         display: none;
+        flex-direction: column-reverse;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: purple;
     }
-    #burger {
-        font-size: 22px;
+    #navActive {
+        display: flex;
     }
-    #close {
-        display: none;
+    .openNav, .closeNav {
+        display: block;
+    }
+    #navActive:checked ~ .navLien{
+        display: flex;
     }
     header {
         justify-content: center;
