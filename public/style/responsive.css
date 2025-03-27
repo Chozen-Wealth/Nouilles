@@ -88,8 +88,8 @@
     .openNav, .closeNav {
         display: block;
     }
-    #navActive:checked ~ .navLien{
-        display: flex;
+    #navActive:checked ~ .navLien {
+        display:flex
     }
     header {
         justify-content: center;
@@ -224,5 +224,12 @@
     .footerDiv p {
         margin-bottom: 20px;
     }
-    
+
+    nav:has(#navActive:checked) ul{
+        
+        display: flex;
+    }
+    #navActive{
+        display: none;
+    }
 }
