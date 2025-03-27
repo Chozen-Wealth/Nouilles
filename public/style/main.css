@@ -83,14 +83,47 @@
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+@keyframes slideUp {
+    0% {
+        
+        margin-bottom: 0px;
+    }
+    100% {
+        margin-bottom: 350px;
+    }
+}
+@keyframes slideDown {
+    0% {
+        
+        margin-bottom: 350px;
+    }
+    100% {
+        margin-bottom: 0px;
+    }
+}
 .serviceDiv > div {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 270px;
+    height: 200px;
     border: 1px solid rgba(128, 128, 128, 0.3);
     border-radius: 5px;
+    overflow-y: hidden;
+}
+.serviceDiv > div p {
+    text-align: center;
+    margin-bottom: 0px;
+    transition: all 1.5s ease;
+    /* animation: slideDown 1.5s ease forwards; */
+}
+.serviceDiv > div:hover p {
+    /* animation: slideUp 1.5s ease forwards; */
+    transition: all 1.5s ease;
+    margin-bottom: 350px;
+    /* PLUS FACILE AVEC UN HOVER, CEST PLUS SMOOTH */
 }
 .serviceDiv div h3 {
     font-family: "Baloo 2", sans-serif;
@@ -98,11 +131,11 @@
     font-weight: 900;
     font-size: 22px;
     margin-top: 20px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
 .service img {
     width: 60px;
-    margin-top: 50px;
+    margin-top: 160px;
 }
 /* SERVICE */
 
