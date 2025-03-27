@@ -1,3 +1,108 @@
 @media (min-width:600px) and (max-width:1024px) {
-    
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    nav h2 {
+        font-size: 22px;
+    }
+    nav ul {
+        font-size: 16px;
+        gap: 10px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutImgDiv {
+        width: 40%;
+    }
+    .aboutTextDiv {
+        width: 80%;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .serviceDiv {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .portfolioDiv div {
+        width: 300px;
+        height: 300px;
+    }
+    .cta {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .ctaGauche {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ctaDroite {
+        margin-right: 0;
+    }
+    .blog img {
+        width: 200px;
+        height: 200px;
+    }
+    .blogPostText1 {
+        overflow-y: scroll;
+        gap: 10px;
+    }
+    .blogPost1 {
+        height: 200px;
+    }
+    .blogPostText2 {
+        overflow-y: scroll;
+        gap: 10px;
+    }
+    .blogPost2 {
+        height: 200px;
+    }
+    form textarea {
+        width: 60%;
+    }
+}
+
+@media (max-width:600px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #buger {
+        display: block;
+    }
+    #close {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    .headerDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    header h1 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 10px;
+    }
+    header h2 {
+        font-size: 46px;
+    }
+    header h3 {
+        font-size: 20px;
+    }
 }
