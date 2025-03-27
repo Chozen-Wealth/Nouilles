@@ -19,6 +19,7 @@
         padding-left: 4%;
         padding-right: 4%;
         position: relative;
+        position: sticky;
     }
     nav h2 {
         font-size: 22px;
