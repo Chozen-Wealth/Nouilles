@@ -121,7 +121,12 @@
     .portfolioDiv div{
         width: 250px;
         height: 250px;
-
+    }
+    .pricingDiv > div {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding-bottom: 20px;
     }
     .cta {
         flex-direction: column;
