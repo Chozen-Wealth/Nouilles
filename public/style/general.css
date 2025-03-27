@@ -24,3 +24,7 @@ h4 {
     font-weight: 400;
     color: #6F6F6F;
 }
+
+button {
+    cursor: pointer;
+}
