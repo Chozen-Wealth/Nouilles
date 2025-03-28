@@ -17,9 +17,16 @@
     }
 
     @keyframes hoverEffect {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0);}
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px) scaleY(150%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+
     }
 
     nav ul li a {
@@ -30,12 +37,12 @@
             transform 0.3s ease;
     }
     /* Hover effect */
-    nav:has(#navActive:checked) ul li a:hover {
+    nav:has(#navActive:checked) ul li:hover a {
         /* transform: translateY(-10px); */
         color: rgb(232, 207, 255);
         /* transition: transform 0.3s ease, color 0.3s ease;
         transition-delay: 0s !important; */
-        animation: hoverEffect 0.3s ease forwards;
+        animation: hoverEffect 0.3s ease forwards 1;
     }
     
 
