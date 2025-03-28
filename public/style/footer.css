@@ -36,4 +36,9 @@ footer hr {
     align-items: center;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+.footerDiv div i:hover {
+    background-color: gray;
+    color: white;
 }
