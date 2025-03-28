@@ -117,6 +117,7 @@
     border: 1px solid rgba(128, 128, 128, 0.3);
     border-radius: 5px;
     overflow-y: hidden;
+    cursor: pointer;
 }
 .serviceDiv > div p {
     text-align: center;
