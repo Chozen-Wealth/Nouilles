@@ -39,9 +39,16 @@ nav ul li {
     height: 100%;
     transition: 0.5s ease;
 }
-nav ul li:hover {
-    color: #980dd8;
-    transition: 0.5s ease;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: transform 0.5s ease, color 0.5s ease;
+    display: inline-block;
+}
+nav ul li:hover a{
+    color: rgb(232, 207, 255);
+    transform: translateY(-10px);
 }
 nav ul i {
     transition: 0.5s ease;
@@ -57,14 +64,19 @@ nav ul i {
     color: white;
     font-size: 24px;
 }
+#close {
+    font-size: 24px;
+}
 
 .openNav, .closeNav {
     display: block;
+    cursor: pointer;
 }
 nav:has(#navActive:checked) ul {
     display: flex;
     position: absolute;
     right: 5%;
+    cursor: auto;
 }
 nav:has(#navActive:checked) #burger{
     display: none;

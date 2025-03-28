@@ -113,6 +113,13 @@
         top: 0;
         right: 0; */
     }
+    nav ul li a {
+        display: inline-block;
+    }
+    nav ul li:hover a{
+        transform: translateY(0px) translateX(-10px);
+        color: rgb(232, 207, 255);
+    }
     #closeNav {
         position: absolute;
         right: 0px;
