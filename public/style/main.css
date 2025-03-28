@@ -184,6 +184,9 @@
     /* clip-path: circle(75%); */
     clip-path: inset(0% round 0% 0%  0%);
 }
+.portfolioDiv > div {
+    cursor: pointer;
+}
 .portInside h2 {
     font-size: 22px;
     margin: 0;
