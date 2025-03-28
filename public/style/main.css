@@ -257,6 +257,10 @@
     padding: 10px 12px;
     border: none;
     margin-top: 45px;
+    transition: 0.3s ease;
+}
+.pricing button:hover {
+    background-color: #8d79db;
 }
 /* PRICING */
 
