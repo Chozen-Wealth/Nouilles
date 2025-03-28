@@ -57,6 +57,11 @@
     font-size: large;
     border-radius: 25px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+.about button:hover {
+    background-color: #695AA6;
+    color: white;
 }
 /* ABOUT */
 
