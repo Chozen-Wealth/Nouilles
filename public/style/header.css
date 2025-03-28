@@ -50,6 +50,10 @@ header button {
     border-radius: 30px;
     border: none;
     margin-top: 40px;
+    transition: 0.3s ease;
+}
+header button:hover {
+    background-color: #8d79db;
 }
 
 .headerDiv {
