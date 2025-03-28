@@ -1,33 +1,173 @@
-@media (min-width:600px) and (max-width:1024px) {
-    .openNav, .closeNav {
-        display: block;
-    }
-    nav:has(#navActive:checked) ul {
+
+@media (min-width:1024px) {
+    nav ul {
         display: flex;
         position: absolute;
         right: 5%;
-    }
-    nav:has(#navActive:checked) #burger{
-        display: none;
-        transition: all 1s ease-out;
-    }
-    #navActive{
-        display: none;
-        transition: all 1s ease-out;
-    }
-    nav {
-        padding-left: 4%;
-        padding-right: 4%;
-        position: relative;
-        position: sticky;
-    }
-    nav h2 {
-        font-size: 22px;
-    }
-    nav ul {
-        display: none;
-        font-size: 16px;
         gap: 10px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav:has(#navActive:checked) ul {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        /* transform: translateY(0); */
+    }
+
+    @keyframes hoverEffect {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0);}
+    }
+
+    nav ul li a {
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: 
+            opacity 0.3s ease, 
+            transform 0.3s ease;
+    }
+    /* Hover effect */
+    nav:has(#navActive:checked) ul li a:hover {
+        /* transform: translateY(-10px); */
+        color: rgb(232, 207, 255);
+        /* transition: transform 0.3s ease, color 0.3s ease;
+        transition-delay: 0s !important; */
+        animation: hoverEffect 0.3s ease forwards;
+    }
+    
+
+    nav:has(#navActive:checked) ul li a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Délais d'apparition */
+    nav:has(#navActive:checked) ul li:nth-of-type(1) a { transition-delay: 0.5s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(2) a { transition-delay: 0.4s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(3) a { transition-delay: 0.3s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(4) a { transition-delay: 0.2s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(5) a { transition-delay: 0.1s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(6) a { transition-delay: 0s; }
+
+    /* Délais de fermeture (inversés) */
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(6) a { transition-delay: 0s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(5) a { transition-delay: 0.1s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(4) a { transition-delay: 0.2s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(3) a { transition-delay: 0.3s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(2) a { transition-delay: 0.4s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(1) a { transition-delay: 0.5s; }
+
+    /* Gestion du bouton de fermeture */
+    .closeNav {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    nav:not(:has(#navActive:checked)) .closeNav {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Gestion du burger */
+    .openNav {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    nav:has(#navActive:checked) .openNav {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    
+    
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+
+    nav ul {
+        display: flex;
+        position: absolute;
+        right: 5%;
+        gap: 10px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav:has(#navActive:checked) ul {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        /* transform: translateY(0); */
+    }
+
+    @keyframes hoverEffect {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0);}
+    }
+
+    nav ul li a {
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: 
+            opacity 0.3s ease, 
+            transform 0.3s ease;
+    }
+    /* Hover effect */
+    nav:has(#navActive:checked) ul li a:hover {
+        /* transform: translateY(-10px); */
+        color: rgb(232, 207, 255);
+        /* transition: transform 0.3s ease, color 0.3s ease;
+        transition-delay: 0s !important; */
+        animation: hoverEffect 0.3s ease forwards;
+    }
+    
+
+    nav:has(#navActive:checked) ul li a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Délais d'apparition */
+    nav:has(#navActive:checked) ul li:nth-of-type(1) a { transition-delay: 0.5s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(2) a { transition-delay: 0.4s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(3) a { transition-delay: 0.3s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(4) a { transition-delay: 0.2s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(5) a { transition-delay: 0.1s; }
+    nav:has(#navActive:checked) ul li:nth-of-type(6) a { transition-delay: 0s; }
+
+    /* Délais de fermeture (inversés) */
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(6) a { transition-delay: 0s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(5) a { transition-delay: 0.1s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(4) a { transition-delay: 0.2s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(3) a { transition-delay: 0.3s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(2) a { transition-delay: 0.4s; }
+    nav:not(:has(#navActive:checked)) ul li:nth-of-type(1) a { transition-delay: 0.5s; }
+
+    /* Gestion du bouton de fermeture */
+    .closeNav {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    nav:not(:has(#navActive:checked)) .closeNav {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Gestion du burger */
+    .openNav {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
+    nav:has(#navActive:checked) .openNav {
+        opacity: 0;
+        pointer-events: none;
     }
     .about {
         display: flex;
